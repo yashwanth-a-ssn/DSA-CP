@@ -40,10 +40,10 @@ public:
 // When the target becomes zero, store the current combination.
 // Explore all valid possibilities using include/exclude strategy.
 
-// TC: O(2^T)
-// T => Target Value (worst-case recursion depth depends on target)
+// TC: O(2^T * K)
+// T => Target value (recursion depth)
+// K => Average length of valid combination -> Stored in the Data Structure
 // SC: O(T)
-// T => Recursive Stack + Current Combination Storage
 
 // Verdict: Optimal
 
