@@ -44,6 +44,7 @@ public:
 // T => Target value (recursion depth)
 // K => Average length of valid combination -> Stored in the Data Structure
 // SC: O(T)
+// T => Recursive Stack + Current Combination Storage
 
 // Verdict: Optimal
 
