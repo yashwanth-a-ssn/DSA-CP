@@ -16,27 +16,24 @@ public:
 class Solution {
 public:
     bool searchKey(ListNode* head, int key) {
-        if(head->val == key) return true;
         ListNode* temp = head;
-
-        while(temp->next != nullptr){
+        
+        while(temp != nullptr){
             if(temp->val == key) return true;
             temp = temp->next;
         }
-
-        if(temp->val == key) return true;
-
+        
         return false;
     }
-};
+};  
 
 // Technique:
 // Linear Search Traversal in LL
 
 // Approach:
-// 1. Check head node (single node case)
-// 2. Traverse until second last node using while(temp->next)
-// 3. Check tail node separately (while loop misses it)
+// 1. Check head node to temp node.
+// 2. Traverse until last node using while(temp)
+// 3. Check temp->val at each traversal and return true if key is found.
 
 // TC: O(N)
 // SC: O(1)
